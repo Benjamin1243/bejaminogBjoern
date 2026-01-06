@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+
+*{
+    padding:  0;
+
+    margin: 0;
+}
+body{
+      font-family: "Tagesschrift", system-ui;
+
+}
+.hero{
+    display: grid;
+    justify-content: center; align-items: center;
+   
+}
+h1{
+    color: rgb(255, 128, 0);
+    text-align: center;
+    font-size: 50px;
+     margin-bottom: 100px;
+}
+img{
+    max-width: 100%;
+}
