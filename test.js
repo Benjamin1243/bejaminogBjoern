@@ -1,5 +1,8 @@
 const http = require("http");
 const fs = require("fs");
+const os = require("os")
+
+const ipAdress = os.networkInterfaces()?.en0[1].address
 
 const server = http.createServer((req, res) => {
   if (req.url) {
@@ -38,6 +41,6 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(3000, "192.168.8.223", () => {
-  console.log("Server kører på port 3000");
+server.listen(3000, ipAdress, () => {
+  console.log("Server kører på port 3000 på ip "+ ipAdress +"link" + "http://"+ ipAdress + ":3000/index.html");
 });
